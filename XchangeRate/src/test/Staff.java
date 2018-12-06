@@ -7,6 +7,13 @@ public class Staff {
   private final long ID=Next_ID.getAndIncrement();
   private String name;
   private String surName;
+  private String department;
+public String getDepartment() {
+	return department;
+}
+public void setDepartment(String department) {
+	this.department = department;
+}
 public long getID() {
 	return ID;
 }
@@ -23,9 +30,10 @@ public void setSurname(String surname) {
 	surName = surname;
 }
   
-public Staff(String name,String surname) {
+public Staff(String name,String surname,String depart) {
 	this.name=name;
 	this.surName=surname;
+	this.department=depart;
 }
   
 }
